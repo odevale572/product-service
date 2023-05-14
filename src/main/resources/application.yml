@@ -2,7 +2,8 @@ server:
   port: 8083
 
 spring:
-  profile: dev  application:    name: product-service
+  application:    
+    name: product-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/payment?useSSL=false
