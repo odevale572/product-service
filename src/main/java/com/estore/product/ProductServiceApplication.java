@@ -16,8 +16,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  */
 @SpringBootApplication
 //@EnableEurekaClient
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
-@ComponentScan({"com.estore.product.*"})
+
 public class ProductServiceApplication {
 
 	public static void main(String[] args) {
