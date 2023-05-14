@@ -6,7 +6,7 @@ spring:
     name: product-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/payment?useSSL=false
+    url: jdbc:mysql://localhost:3306/payment?allowPublicKeyRetrieval=true&useSSL=False
     username: root
     password: root
     hikari:
