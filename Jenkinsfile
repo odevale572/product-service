@@ -4,13 +4,7 @@ node {
   }
 
   stage("Compilation") {
-    sh "./mvnw clean install"
+    sh "mvn clean install"
   }
 
-  stage("Tests and Deployment") {
-   
-    stage("Deployment") {
-      sh 'nohup ./mvnw spring-boot:run -Dserver.port=8001 &'
-    }
-  }
 }
