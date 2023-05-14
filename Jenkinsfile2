@@ -28,7 +28,7 @@ pipeline {
     steps {
         script {
           
-	   bat './mvnw spring-boot:run -Dspring.profiles.active=dev &'
+	   bat './mvnw spring-boot:run -Dserver.port=8083 &'
           }
        }
       
