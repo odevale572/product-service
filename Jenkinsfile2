@@ -22,5 +22,16 @@ pipeline {
           }
        }
     }
+    
+    
+    stage("Deployment") {
+    steps {
+        script {
+          
+	   bat './mvnw spring-boot:run -Dserver.port=8001 &'
+          }
+       }
+      
+    }
   }
 }
