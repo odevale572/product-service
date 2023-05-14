@@ -1,7 +1,17 @@
 pipeline {
    agent any
    stages {
-    stage('Checkout') {
+      
+      stage("Clone the project") {
+    git branch: 'main', url: 'https://github.com/odevale572/product-service.git'
+  }
+
+  stage("Compilation") {
+    sh "./mvnw clean install -DskipTests"
+  }
+
+ 
+    /*stage('Checkout') {
       steps {
         script {
            // The below will clone your repo and will be checked out to master branch by default.
@@ -14,6 +24,6 @@ pipeline {
            sh "git checkout main"
           }
        }
-    }
+    }*/
   }
 }
