@@ -1,4 +1,4 @@
-package com.estore.product.util;
+package com.covid.analysis.util;
 
 import java.util.Random;
 
